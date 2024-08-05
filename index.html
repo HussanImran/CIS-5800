@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityMD Prototype</title>
+    <img src="citymd_logo.png" alt="CityMD Logo" class="logo">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header> <!-- MAIN SITE CODE, Landing Page-->
+            <h1>Welcome to CityMD</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home    </a></li>
+                    <li><a href="#mission">Mission Statement</a></li>
+                    <li><a href="#login">Client Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="home" class="content">
+            <h2>Welcome to CityMD</h2>
+            <p>Your trusted partner in healthcare. We provide comprehensive and compassionate care for all your medical needs.</p>
+        </section>
+        <section id="mission" class="content">
+            <h2>Mission Statement</h2>
+            <p>Our mission: We serve our communities by providing quality medical care through convenient access and an exceptional experience, and we consider this mission with every patient that walks through our doors.</p>
+        </section>
+        <section id="login" class="content">
+            <h2>Client Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginMessage"></div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header> <!-- Test account that shows medical history and bills-->
+            <h1>Client Account</h1>
+            <button id="logoutButton" class="logout">Logout</button>
+        </header>
+        <section class="content">
+            <h2>Welcome, Hussan!</h2>
+            <p>Your medical history and bills are shown below.</p>
+            <!-- Dummy content -->
+            <h3>Medical History</h3>
+            <ul>
+                <li>Visit on 01/01/2024: General Checkup</li>
+                <li>Visit on 02/15/2024: Flu Vaccination</li>
+            </ul>
+            <h3>Bills</h3>
+            <ul>
+                <li>01/01/2024: $100 <button class="payButton" data-bill="100">Pay</button></li>
+                <li>02/15/2024: $50 <button class="payButton" data-bill="50">Pay</button></li>
+            </ul>
+            <!-- Simple Appointment system-->
+            <h3>Schedule an Appointment</h3>
+            <form id="scheduleForm">
+                <label for="appointmentDate">Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <label for="appointmentTime">Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+                <button type="submit">Schedule</button>
+            </form>
+            <div id="scheduleMessage"></div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
